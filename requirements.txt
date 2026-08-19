@@ -1,0 +1,13 @@
+# vit_hope dependencies
+#
+# CUDA 12.4 wheels are compatible with the cluster's CUDA 12.4 driver.
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+timm>=1.0.20         # DINOv2 / DINOv3 / Swin V2 backbones (DINOv3 needs >=1.0.20)
+torchmetrics>=1.1    # masked SSIM in visualize.py (needs return_full_image)
+opencv-python        # pose masking / Rodrigues in prepare_poses.py
+numpy
+pandas
+Pillow

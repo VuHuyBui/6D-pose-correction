@@ -1,0 +1,15 @@
+# vit_hope dependencies
+#
+# Install torch/torchvision separately to match your CUDA build, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# then:
+#   pip install -r requirements.txt
+
+torch
+torchvision
+timm>=0.9.0          # DINOv2 ViT-S/14 backbone (vit_small_patch14_dinov2)
+torchmetrics>=1.0    # SSIM in visualize.py
+opencv-python        # pose masking / Rodrigues in prepare_poses.py
+numpy
+pandas
+Pillow
